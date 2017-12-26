@@ -1,0 +1,7 @@
+#!/bin/sh
+
+gosu root ufw default deny incoming
+gosu root ufw default allow outgoing
+gosu root ufw limit 2200/tcp
+gosu root ufw limit www
+gosu root ufw enable

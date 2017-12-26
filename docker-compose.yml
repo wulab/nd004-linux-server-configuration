@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  app:
+    build: ./app
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - "80:80"
+      - "123:123"
+      - "2200:2200"
+    volumes:
+      - ./app/root/etc/cont-init.d:/etc/cont-init.d
+      - ./app/root/etc/services.d:/etc/services.d
+      - ./app/root/etc/ssh/sshd_config:/etc/ssh/sshd_config
