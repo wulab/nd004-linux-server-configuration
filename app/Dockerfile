@@ -35,4 +35,8 @@ RUN groupadd grader \
 COPY root /
 COPY grader.pub /home/grader/.ssh/authorized_keys
 
+RUN chown -R grader:grader /home/grader/.ssh \
+        && chmod 700 /home/grader/.ssh \
+        && chmod 600 /home/grader/.ssh/authorized_keys
+
 ENTRYPOINT [ "/init" ]
