@@ -13,3 +13,4 @@ services:
       - ./app/root/etc/cont-init.d:/etc/cont-init.d
       - ./app/root/etc/services.d:/etc/services.d
       - ./app/root/etc/ssh/sshd_config:/etc/ssh/sshd_config
+      - ./app/root/etc/apache2/sites-enabled:/etc/apache2/sites-enabled
