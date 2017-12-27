@@ -8,6 +8,7 @@ services:
     ports:
       - "80:80"
       - "123:123"
+      - "443:443"
       - "2200:2200"
     volumes:
       - ./app/root/etc/cont-init.d:/etc/cont-init.d
