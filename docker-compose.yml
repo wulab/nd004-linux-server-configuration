@@ -5,6 +5,9 @@ services:
     build: ./app
     cap_add:
       - NET_ADMIN
+    environment:
+      - FLASK_APP=itemcatalog
+      - OAUTH2_CLIENT_ID=123456789.apps.googleusercontent.com
     ports:
       - "80:80"
       - "123:123"

@@ -4,9 +4,10 @@
 
 ## Table of Contents
 
-- [Install](#install)
 - [Features](#features)
+- [Install](#install)
 - [Usage](#usage)
+- [Known issues](#known-issues)
 - [Contribute](#contribute)
 - [License](#license)
 
@@ -45,6 +46,19 @@ log into SSH server under `grader` account, run:
 Press `Ctrl+C` to stop the service. If you want to clean up everything, use:
 
     $ docker-compose down --rmi local --volumes
+
+## Known issues
+
+> ip6tables v1.6.0: can't initialize ip6tables table `filter': Table does not
+> exist (do you need to insmod?)
+
+Try issuing a few ufw commands on your host machine to auto-load the module:
+
+    $ ufw default deny incoming
+    $ ufw allow www
+    $ ufw enable
+
+See https://github.com/moby/moby/issues/33605#issuecomment-307361421.
 
 ## Contribute
 
