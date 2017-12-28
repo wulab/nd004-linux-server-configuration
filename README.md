@@ -8,7 +8,7 @@
 - [Install](#install)
 - [Usage](#usage)
 - [Known issues](#known-issues)
-- [Contribute](#contribute)
+- [References](#references)
 - [License](#license)
 
 ## Features
@@ -19,7 +19,7 @@
 
 ## Install
 
-Docker Compose is required to run the script. Please refer to [Install Docker
+Docker Compose is required to run this app. Please refer to [Install Docker
 Compose](https://docs.docker.com/compose/install/) if you don't have one on
 your system.
 
@@ -60,10 +60,13 @@ Try issuing a few ufw commands on your host machine to auto-load the module:
 
 See https://github.com/moby/moby/issues/33605#issuecomment-307361421.
 
-## Contribute
+## References
 
-PRs not accepted. However, you can fork this repository and modify it under
-your account.
+- http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/
+- http://flask.pocoo.org/docs/0.12/patterns/packages/
+- http://modwsgi.readthedocs.io/en/develop/user-guides/quick-configuration-guide.html
+- https://github.com/just-containers/s6-overlay
+- https://help.ubuntu.com/community/SSH/OpenSSH/Configuring
 
 ## License
 
